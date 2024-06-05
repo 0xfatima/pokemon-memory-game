@@ -1,0 +1,78 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem 2rem 2rem 2rem;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;}
+body{
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+header{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0rem 2rem 0rem;
+  justify-content: space-between;
+}
+.heading{
+  text-align: left;
+}
+h1,h3{
+  color: #FBC99D;
+}
+h3,h1,p{
+  padding: 0;
+  margin: 0;
+}
+p{
+  font-weight: bold;
+}
+.pokemons{
+  display:grid ;
+  grid-template-columns: 15rem 15rem 15rem 15rem;
+  grid-template-rows: auto;
+  gap: 2rem;
+
+}
+
+.card{
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 2rem 0.5rem;
+  border-radius: 15px ;
+  background-color:whitesmoke;
+  
+  
+}
+.card:hover{
+  filter: grayscale(100%) drop-shadow(0 20px 20px rgba(111, 255, 243, 0.4));
+  cursor: pointer;
+  box-shadow: 0 8px 10px #c50f0fee;
+}
+.image{
+  width: 12rem;
+  height: 12rem;
+}
+.img-background{
+  background-image: url("./assets/poke-bg.png");
+  padding: 0.5rem;
+  border-radius: 15px ;
+  background-size: cover; 
+  
+
+}
+.name-background{
+  padding-top: 1rem;
+}
+@media (max-width:620px) {
+  .pokemons{
+    grid-template-rows: 18rem;
+    grid-template-columns: 18rem;
+  }
+}
